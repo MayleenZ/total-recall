@@ -268,13 +268,15 @@ What percentage of time should be spent thinking about how you're going to solve
 // }
 // console.log((getTwoLengths("Hank", "Hippopopalous")));
 
-//* (HELP) F.
+//*F.
 
 // const getMultipleLengths = (arr) => {
+//     let arrayLength = []
 //     for (let i = 0; i < arr.length; i++) {
-//         return ([arr])
+//         arrayLength.push((arr[i].length))
 //     }
-// }
+//     return arrayLength
+// } 
 // console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
 
 // G.
@@ -299,26 +301,21 @@ What percentage of time should be spent thinking about how you're going to solve
 // console.log(maxOfThree(100, 2, 2));
 
 
-//* (HELP) H.
-
-// const printLongestWord = (arr) => {
-//     let maxLength = 0;
-//     for (let i = 0; i < arr.length; i++) {
-//         if (maxLength < arr.length) {
-//             maxLength = arr.length[i];
-//         } else {
-//             return arr[i]
+//*H.
+// function printLongestWord(array) {
+//     let longestWord = '';
+//     array.forEach((str) => {
+//         if (str.length > longestWord.length) {
+//             longestWord = str;
 //         }
-//     } return maxLength
+//     });
+//     return longestWord;
 // }
-// console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd", 'oifjdoaifjodifjaodifjo']));
+
+
+// console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
 
 //_____________________________________________________________
-
-
-
-
-
 
 // V. Objects
 // A.
