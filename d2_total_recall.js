@@ -53,21 +53,52 @@
 ////////////////////////////////
 //* Yell at the Ninja Turtles
 
-ninja_Turtle = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"]
+// ninja_Turtle = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"]
 
-for (const element of ninja_Turtle){
-    console.log(element.toUpperCase());
-}
-
-
-
-////////////////////////////////
+// for (const element of ninja_Turtle){
+//     console.log(element.toUpperCase());
+// }
 
 
 ////////////////////////////////
 //* Methods, Revisited
-////////////////////////////////
 
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+
+console.log(favMovies[8])
+
+//console.log(favMovies.sort())
+
+favMovies.pop()
+favMovies.push('Guardians of the Galaxy')
+//console.log(favMovies);
+
+favMovies.reverse()
+//reverses the array
+
+favMovies.shift()
+//removes first item of the array
+
+favMovies.unshift()
+//adds an item to beginning of the array , but no arguments = adds no item
+
+console.log(favMovies)
+
+console.log(favMovies.indexOf('Django Unchained'))
+favMovies.splice(14,1,'Avatar')
+//Answer: It does not alter the array but creates a shallow copy
+console.log(favMovies)
+
+
+let slicedArray = ((favMovies.length ) / 2)
+console.log(slicedArray); //9
+let sliceArray = favMovies.slice(9)
+console.log(sliceArray);
+
+
+
+console.log(sliceArray.indexOf('Fast and Furious'))
+//-1
 
 ////////////////////////////////
 //* Where is Waldo
