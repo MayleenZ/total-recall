@@ -118,29 +118,39 @@
 
 ////////////////////////////////
 //*  Excited Kitten
-phrases = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."]
-for (let i = 0; i <= 21; i++){
-    if(i % 2 === 0){
-        let rando = Math.floor(Math.random() * 3)
-        if (rando === 0){
-            console.log(phrases[0])
-        } else if (rando === 1) {
-            console.log(phrases[1])
-        } else if(rando === 2) {
-            console.log(phrases[2])
-        }
-    } else {
-        console.log(i)
-    }
-}
-
-
-
-
-
-////////////////////////////////
-
+// phrases = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."]
+// for (let i = 0; i <= 21; i++){
+//     if(i % 2 === 0){
+//         let rando = Math.floor(Math.random() * 3)
+//         if (rando === 0){
+//             console.log(phrases[0])
+//         } else if (rando === 1) {
+//             console.log(phrases[1])
+//         } else if(rando === 2) {
+//             console.log(phrases[2])
+//         }
+//     } else {
+//         console.log(i)
+//     }
+// }
 
 ////////////////////////////////
 //*  Find the Median
+
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+
+// const median = (Math.floor(nums.length / 2))
+// console.log(median);
+sortedNums = (nums.sort())
+console.log(sortedNums);
+//sorted the nums array 
+
+const median = Math.floor((sortedNums.length / 2))
+//found the median and used floor to remove decimal
+
+console.log(sortedNums[median]);
+//sorted the nums using the median that I found
+
+
+
 ///////////////////////
