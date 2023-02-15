@@ -263,15 +263,56 @@ What percentage of time should be spent thinking about how you're going to solve
 // }
 // console.log(isVowel('a'));
 // E.
-const getTwoLengths = (str1, str2) => {
-    return str1.length, str2.length
-}
+// const getTwoLengths = (str1, str2) => {
+//     return ([str1.length, str2.length])
+// }
+// console.log((getTwoLengths("Hank", "Hippopopalous")));
 
-console.log(getTwoLengths("Hank", "Hippopopalous"));
+//* (HELP) F.
 
-// F.
+// const getMultipleLengths = (arr) => {
+//     for (let i = 0; i < arr.length; i++) {
+//         return ([arr])
+//     }
+// }
+// console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+
 // G.
-// H.
+
+// const maxOfThree = (num1, num2, num3) => {
+//     if (num1 > num2) {
+//         return num1
+//     } else if (num2 > num1) {
+//         return num2
+//     } else if (num3 > num1) {
+//         return num3
+//     } else if (num1 > num2) {
+//         return num1
+//     } else if (num1 > num3) {
+//         return num1
+//     } else if (num2 > num3) {
+//         return num2
+//     } else {
+//         return num1 || num2 || num3
+//     }
+// }
+// console.log(maxOfThree(100, 2, 2));
+
+
+//* (HELP) H.
+
+// const printLongestWord = (arr) => {
+//     let maxLength = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         if (maxLength < arr.length) {
+//             maxLength = arr.length[i];
+//         } else {
+//             return arr[i]
+//         }
+//     } return maxLength
+// }
+// console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd", 'oifjdoaifjodifjaodifjo']));
+
 //_____________________________________________________________
 
 
@@ -281,12 +322,62 @@ console.log(getTwoLengths("Hank", "Hippopopalous"));
 
 // V. Objects
 // A.
+const user = {
+    name: "May",
+    email:  "may@google.com",
+    age: '24',
+    purchased: []
+}
 // B.
+user.email = 'Jon@google.com'
+user.age++
+console.log(user)
 // C.
+user.location = "new york city"
+console.log(user);
 // D.
+user.purchased.push("carbohydrates")
+user.purchased.push("peace of mind")
+user.purchased.push("Merino jodhpurs")
+console.log(user);
+console.log(user.purchased[2]);
 // E.
+user.friend = {
+    name: 'Jon',
+    age: "25",
+    location: "Bronx, NY",
+    purchased: []
+}
+console.log(user.friend.name);
+console.log(user.friend.location);
+user.friend.age = '55'
+console.log(user.friend);
+user.friend.purchased.push("The One Ring")
+user.friend.purchased.push("A Latte")
+console.log(user.friend.purchased[1]);
 // F.
-// G.
+
+for (let i = 0; i < user.purchased.length; i++) {
+    console.log(user.purchased[i]);
+}
+
+
+for (let i = 0; i < user.friend.purchased.length; i++) {
+    console.log(user.friend.purchased[i]);
+}
+
+//* HELP G.
+
+const updateUser = () => {
+    for (let i = 0; i < user.length ; i++) {
+        user.age++ && user.name.toUpperCase()
+    }
+}
+
+console.log(updateUser())
+
+
+
 //_____________________________________________________________
 
 
