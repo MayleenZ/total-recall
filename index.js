@@ -319,65 +319,74 @@ What percentage of time should be spent thinking about how you're going to solve
 
 // V. Objects
 // A.
-const user = {
-    name: "May",
-    email:  "may@google.com",
-    age: '24',
-    purchased: []
-}
+// const user = {
+//     name: "May",
+//     email:  "may@google.com",
+//     age: 24,
+//     purchased: []
+// }
 // B.
-user.email = 'Jon@google.com'
-user.age++
-console.log(user)
-// C.
-user.location = "new york city"
-console.log(user);
-// D.
-user.purchased.push("carbohydrates")
-user.purchased.push("peace of mind")
-user.purchased.push("Merino jodhpurs")
-console.log(user);
-console.log(user.purchased[2]);
-// E.
-user.friend = {
-    name: 'Jon',
-    age: "25",
-    location: "Bronx, NY",
-    purchased: []
-}
-console.log(user.friend.name);
-console.log(user.friend.location);
-user.friend.age = '55'
-console.log(user.friend);
-user.friend.purchased.push("The One Ring")
-user.friend.purchased.push("A Latte")
-console.log(user.friend.purchased[1]);
-// F.
+// user.email = 'Jon@google.com'
+// user.age++
+// console.log(user)
+// // C.
+// user.location = "new york city"
+// console.log(user);
+// // D.
+// user.purchased.push("carbohydrates")
+// user.purchased.push("peace of mind")
+// user.purchased.push("Merino jodhpurs")
+// console.log(user);
+// console.log(user.purchased[2]);
+// // E.
+// user.friend = {
+//     name: 'Jon',
+//     age: "25",
+//     location: "Bronx, NY",
+//     purchased: []
+// }
+// console.log(user.friend.name);
+// console.log(user.friend.location);
+// user.friend.age = '55'
+// console.log(user.friend);
+// user.friend.purchased.push("The One Ring")
+// user.friend.purchased.push("A Latte")
+// console.log(user.friend.purchased[1]);
+// // F.
 
-for (let i = 0; i < user.purchased.length; i++) {
-    console.log(user.purchased[i]);
-}
-
-
-for (let i = 0; i < user.friend.purchased.length; i++) {
-    console.log(user.friend.purchased[i]);
-}
-
-//* HELP G.
-
-const updateUser = () => {
-    for (let i = 0; i < user.length ; i++) {
-        user.age++ && user.name.toUpperCase()
-    }
-}
-
-console.log(updateUser())
+// for (let i = 0; i < user.purchased.length; i++) {
+//     console.log(user.purchased[i]);
+// }
 
 
+// for (let i = 0; i < user.friend.purchased.length; i++) {
+//     console.log(user.friend.purchased[i]);
+// }
 
+//*G.
+// let user = {
+//     name: "May",
+//     email:  "may@google.com",
+//     age: 24,
+//     purchased: []
+// }
+
+// const updateUser = () => {
+//         console.log(user.age+=1);
+//         console.log(user.name.toUpperCase())
+// }
+
+// updateUser()
+
+// const oldAndLoud = (person) => {
+//        console.log(person.age+=1);
+//        console.log(person.name.toUpperCase())
+//     }
+
+
+// oldAndLoud(user);
+//
 //_____________________________________________________________
 
 
-// Extra
-
-
+// Extra//
