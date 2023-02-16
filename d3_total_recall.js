@@ -18,7 +18,7 @@ class Hamster {
     }
   }
 
-  class Person {
+class Person {
     constructor(name){
       this.name = name
       this.age = 0
@@ -60,3 +60,98 @@ class Hamster {
       this.bankAccount-=hamster.getPrice()
     }
   }
+
+  const person1 = new Person('Timmy')
+  const hamster = new Hamster("Gus")
+  hamster.name = "Gus"
+  hamster.owner = 'Timmy'
+
+  for (let i = 0; i < 5; i ++) {
+    person1.ageUp()
+
+  }
+
+for (let i = 0; i < 5; i ++) {
+    person1.eat()
+}
+
+for (let i = 0; i < 5; i ++) {
+    person1.exercise()
+}
+
+for (let i = 0; i < 9; i ++) {
+    person1.ageUp()
+}
+for (let i = 0; i < 15; i ++) {
+    person1.ageUp()
+}
+
+person1.eat()
+person1.eat()
+person1.exercise()
+person1.exercise()
+
+person1.buyHamster(hamster)
+
+console.log(person1);
+console.log(hamster);
+
+
+///////
+
+class Dinner {
+    constructor(appetizer, entree, dessert){
+        this.appetizer = appetizer 
+        this.entree = entree
+        this.dessert = dessert
+    }
+
+}
+
+//Factory 
+class Chef {
+    dinnerPrep(appetizer, entree, dessert){
+        const dinner = new Dinner(appetizer, entree, dessert)
+        return dinner
+    }
+
+}
+
+const chef1 = new Chef
+//Creating object for Chef class to then use method and take the properties from Dinner class. Chef class acts as a factory; pumping out methods to instantiate new (appetizer, entree, dessert) from Chef class.
+
+
+const dinnerNights = []
+//Empty array ; waiting for push()
+
+const dinnerNight1 = chef1.dinnerPrep('man','ko','to');
+const dinnerNight2 = chef1.dinnerPrep('mom','ko','to');
+const dinnerNight3 = chef1.dinnerPrep('pop','ko','to');
+//creating variables to push
+
+dinnerNights.push(dinnerNight1, dinnerNight2, dinnerNight3)
+//push into empty array
+
+console.log(dinnerNights);
+//log array with three dinner nights
+
+
+
+
+
+
+/////////////////////
+
+
+// let firstVariable = "Hello world"
+// firstVariable = 5;
+// let secondVariable = firstVariable;
+// secondVariable = "Wow"
+// console.log(firstVariable);
+
+// const yourName = "May"
+// const myName = `Hello, my name is ${yourName}`
+// console.log(myName);
+
+///////////////////
+
