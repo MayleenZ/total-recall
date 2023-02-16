@@ -312,8 +312,17 @@ What percentage of time should be spent thinking about how you're going to solve
 //     return longestWord;
 // }
 
+const printLongestWord = (arr) => {
+    let maxLength = "";
+    for (let i = 0; i < arr.length; i++) {
+        //counting element in the element
+        if (maxLength.length < arr[i].length){
+            maxLength = arr[i]
+        } 
+    } return maxLength
+}
 
-// console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
 
 //_____________________________________________________________
 
