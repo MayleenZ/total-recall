@@ -154,3 +154,56 @@ console.log(sortedNums[median]);
 
 
 ///////////////////////
+
+//* Hungry for More (Return of the Closets)
+
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "Per Scholas hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+  
+
+const kristynsShoe = kristynsCloset.shift()
+console.log(kristynsCloset);
+
+thomsCloset[2].push(kristynsShoe)
+console.log(thomsCloset);
+
+const thomsOutfit1 = [thomsCloset[0][1], thomsCloset[1][1], thomsCloset[2][2]]
+console.log(thomsOutfit1);
+const kristynsOutfit1 = [kristynsCloset[1], kristynsCloset[2], kristynsCloset[3]]
+console.log(kristynsOutfit1);
+
+const outfits = `thom will be wearing a ${thomsOutfit1} and krystin will be wearing her favorite ${kristynsOutfit1}`
+console.log(outfits);
+
+for (let i = 0; i < kristynsCloset.length; i++) {
+    console.log(`WHIRR: Now washing ${kristynsCloset[i]}`)
+}
+
+console.log(thomsCloset);

@@ -154,20 +154,20 @@ console.log(dinnerNights);
 //* Hungry for More 
 
 
-const cat1 = {
-    name: 'henry',
-    breed: "siamese",
-    age: 10
-}
+// const cat1 = {
+//     name: 'henry',
+//     breed: "siamese",
+//     age: 10
+// }
 
 // console.log(cat1.name);
 // console.log(cat1.breed);
 
-const cat2 = {
-    name: 'jack',
-    breed: 'tabby',
-    age: 5
-}
+// const cat2 = {
+//     name: 'jack',
+//     breed: 'tabby',
+//     age: 5
+// }
 
 //* Combine Cats 
 // const combineCats = (mama,papa) => {
@@ -181,21 +181,24 @@ const cat2 = {
 
 //* Combine cats into 1 cat 
 
-const combineCats = (mama,papa) => {
-    let catCombo = {
-        name: mama.name + papa.name,
-        breed: mama.breed + '-' + papa.breed,
-        age: 1
-    }
-    return catCombo 
-}
+// const combineCats = (mama,papa) => {
+//     let catCombo = {
+//         name: mama.name + papa.name,
+//         breed: mama.breed + '-' + papa.breed,
+//         age: 1
+//     }
+//     return catCombo 
+// }
 
-const arg1 = combineCats(cat1, cat2);
-const arg2 = combineCats(cat1, cat2);
+// const arg1 = combineCats(cat1, cat2);
+// const arg2 = combineCats(cat1, cat2);
 
 
 //* Cat Brain Bender
 
 //4 times 
 
-console.log(combineCats(combineCats(arg1, arg2), combineCats(arg1, arg2)));
+// console.log(combineCats(combineCats(arg1, arg2), combineCats(arg1, arg2)));
+
+///////////
+
