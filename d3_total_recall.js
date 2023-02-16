@@ -118,7 +118,7 @@ class Chef {
 }
 
 const chef1 = new Chef
-//Creating object for Chef class to then use method and take the properties from Dinner class. Chef class acts as a factory; pumping out methods to instantiate new (appetizer, entree, dessert) from Chef class.
+//Creating object for Chef class to then use method and take the properties from Dinner class. Chef class acts as a factory; pumping out methods to instantiate new Dinner using the properties (appetizer, entree, dessert) from Chef class.
 
 
 const dinnerNights = []
@@ -136,10 +136,6 @@ console.log(dinnerNights);
 //log array with three dinner nights
 
 
-
-
-
-
 /////////////////////
 
 
@@ -155,3 +151,51 @@ console.log(dinnerNights);
 
 ///////////////////
 
+//* Hungry for More 
+
+
+const cat1 = {
+    name: 'henry',
+    breed: "siamese",
+    age: 10
+}
+
+// console.log(cat1.name);
+// console.log(cat1.breed);
+
+const cat2 = {
+    name: 'jack',
+    breed: 'tabby',
+    age: 5
+}
+
+//* Combine Cats 
+// const combineCats = (mama,papa) => {
+//     console.log(mama)
+//     console.log(papa);
+// }
+
+// combineCats(cat1,cat2)
+
+// combineCats({ name: "Craig", age: 20, breed: "unknown" }, { name: "Linda", age: 20, breed: "undefined" });
+
+//* Combine cats into 1 cat 
+
+const combineCats = (mama,papa) => {
+    let catCombo = {
+        name: mama.name + papa.name,
+        breed: mama.breed + '-' + papa.breed,
+        age: 1
+    }
+    return catCombo 
+}
+
+const arg1 = combineCats(cat1, cat2);
+const arg2 = combineCats(cat1, cat2);
+
+
+//* Cat Brain Bender
+
+//4 times 
+
+console.log(combineCats(combineCats(arg1, arg2), combineCats(arg1, arg2)));
